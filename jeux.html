@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zagreus - site officiel</title>
+    <style>
+        body, html {
+            height: auto;
+            margin: 0;
+            padding: 0;
+            font-family: 'Cinzel', serif;
+        }
+
+        .bg {
+            background-image: url('img/bg.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            z-index: 1;
+            position: relative;
+            padding-top: 60px; /* Ajout d'espace pour la barre de navigation */
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            position: fixed;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            z-index: 2;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .navbar ul li {
+            padding: 0 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .titre-texte {
+            font-size: 3em;
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+            margin-bottom: 0.5em;
+        }
+
+        .btn-telecharger {
+            background-color: rgb(83, 145, 126);
+            color: white;
+            font-size: 16px;
+            padding: 12px 24px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s;
+            border: none;
+        }
+
+        .btn-telecharger:hover {
+            background-color: #53917e;
+        }
+
+        .section {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 1em;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+        }
+
+        @media (min-width: 768px) {
+            .section {
+                width: 50%;
+                margin: 1em auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="bg"></div>
+<div class="navbar">
+    <ul>
+        <li><a href="Entreprise.html">Entreprise</a></li>
+        <li><a href="Ressources.html">Ressources</a></li>
+        <li><a href="index.html">Acceuil</a></li>
+    </ul>
+</div>
+
+<div class="main-container">
+    <div class="titre">
+        <h1 class="titre-texte">Zagreus</h1>
+        <button class="btn-telecharger" onclick="location.href='votre-lien-de-telechargement'">Télécharger le jeu</button>
+    </div>
+
+    <div class="section">
+        <h2>Explorez le monde de Zagreus</h2>
+        <p>Plongez-vous dans une aventure captivante parmi les divinités grecques. C'est dans la peau de Zagreus, le fils d'Hadès, que vous parcourrez le Tartare en quête de la surface.</p>
+    </div>
+
+    <div class="section">
+        <h2>Nos objectifs :</h2>
+        <p>Notre principal objectif est de créer un jeu qui pousse le joueur à se dépasser. En plus de créer des cartes diverses et variées, ainsi que différents monstres dotés d'IA, nous sommes également en train de développer un mode multijoueur en coop et en pvp. </p>
+    </div>
+    <div class="section">
+        <h2>Parcourez l'enfer et tout ces dangers dans la peau de Zagreus</h2>
+        <p>  <img src="img/attack.png" alt="Description de l'image" class="game-image">
+    </div>
+    <div class="section">
+        <h2>Des monstres effrayants </h2>
+        <p>
+            <img src="img/monstre.png" alt="Description de l'image" class="game-image"></p>
+    </div>
+
+
+
+</div>
+
+</body>
+</html>
